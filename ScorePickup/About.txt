@@ -1,0 +1,20 @@
+we wanted something rewarding when enemies died so i created score and health pickups that burst out of enemies when they die, when they collide with a wall or the ground they activate a seek radius when the player is inside out its seeks radius it will start flying towards the player. to do this a callback is used when 
+
+what i like about it:
+easy to add new pickup types
+
+
+
+what i would have done different today.
+instead of a callback i should have used a gameobject event (I previosly made a event system where a message gets broadcasted to components on a gameobject that are listening for that message).
+
+I used our collision system for checking of the pickup was in contact with the player which might be a bit overkill compared to just distance checking against the player.
+but using the collision system meant you could quite easily change the pickups to be picked up npc's or other players.
+
+the collider for sensing when to start seeking towards the play is on a seperate gameobject because i added being able to differentiate between what colliders were triggered in a collision event at a later stage after this feature was finished.
+
+
+
+
+
+code that is commented with ######## is code not written by me.
