@@ -1,5 +1,10 @@
 This is the weapons system we used for Ace of Space.
 
+Instinct weapon component was written by Tobias Erlandsson.
+Network Syncronization was written by Marcus Holst.
+Visual effects was written by Ylva Werner.
+Weapon movement was written by Erik Paldanius
+
 Our original plan for multiplayer was too run minimal code on the client and have most of the logic be handled on the server. therefor i designed it with the intention of it only running on the server with inputs being sent from the client. We later changed and ran logic on both client and server with checks for if components are on client or server this is not how i would have designed it today if i did if from the grounds up.
 
 What i would probably today with how our system works is make seperate components one for client and one for server.
