@@ -1,0 +1,15 @@
+This is the weapons system we used for Ace of Space.
+
+Our original plan for multiplayer was too run minimal code on the client and have most of the logic be handled on the server. therefor i designed it with the intention of it only running on the server with inputs being sent from the client. We later changed and ran logic on both client and server with checks for if components are on client or server this is not how i would have designed it today if i did if from the grounds up.
+
+What i would probably today with how our system works is make seperate components one for client and one for server.
+
+my start point that i wanted it to be easy to add new weapons and change their design and still allowing graphical customization. I wanted as minimal of the managment code to be in the weapons themselves. Generally I'm satisified with the system, though i think it got a bit to complicated for what it does.
+
+The structure:
+We added all the weapons as components on the player aswell as the weaponmanager.
+the weaponmanager handles which weapon is active, checks for player firing input, unlocks the weapons and ammo pickup management.
+
+If i redid this i think i would change so weapons did not have their own specific component instead i would make it so the weapons are their own gameobject and the weapons charasteristics are controlled over several components.
+
+One component for each firing mode the weapon has, aswell as a weapongraphics component allowing for graphical customization on the weapon.
