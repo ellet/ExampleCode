@@ -15,6 +15,4 @@ the collider for sensing when to start seeking towards the play is on a seperate
 
 
 
-
-
 code that is commented with ######## is code not written by me.

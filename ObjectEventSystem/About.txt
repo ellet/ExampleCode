@@ -1,0 +1,17 @@
+needed event system for when events happened on gameobject that is sent to all components on that gameobject
+ex. when a healthcompoent runs out of health it broadcasts outofhealthmessage to all components on the same gameobject subscribed to that message.
+
+to accomplish this i used our Unique identifier class that was made previously by Erik Paldanius for our component factories it generates a unique id based on a template combination between two classes.
+
+GenericSubscriber::OutOfHealMessage and GenericSubscriber::OnCollisionEvent would have two seperate ids.
+
+general outline
+
+gameobject stores its subscribers in a 2 dimensional array were the first index is the message type and the second index is the subscriber.
+
+subsribers has to be subscribed to the gameobject.
+
+the first iteration of this had all the subsribers in a static array and the 
+
+
+would have liked a system where you didn't have to subscribe manually but i haven't found a good way yet.
