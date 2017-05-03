@@ -11,7 +11,9 @@ gameobject stores its subscribers in a 2 dimensional array were the first index 
 
 subsribers has to be subscribed to the gameobject.
 
-the first iteration of this had all the subsribers in a static array and the 
+the first iteration of this had all the subsribers in a static array and the gameobject contains a index to that list.
+
+later we changed this so the gameobjects contained direct pointers instead.
 
 
 would have liked a system where you didn't have to subscribe manually but i haven't found a good way yet.
